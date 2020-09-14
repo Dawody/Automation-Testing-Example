@@ -1,0 +1,20 @@
+ID,FirstName,LastName,Mobile,Email,Password,ConfirmedPassword,ExpectedResult,TestResult,ExpectedReason
+1,,,,,,,False,True,empty elements
+2,Mohamed,Hassan,01117322726,mohamedhassan@gmail.com,Aa123456,Aa123456,True,True,All conditions achieved
+3,ahmed,Hassan,01259877456,ahmedhassan@gmail.com,SS123457,SS123457,False,False,first name start with small letter
+4,Ahmed,hassan,01259877456,ahmed_hassan@gmail.com,Ss123457,Ss123457,False,False,last name start with small letter
+5,Ahmed,Ahmed,01115699874,ahmedahmed@gmail.com,SS123456,SS123456,False,False,last name can't be equal first name
+6,Ayman,Taha,0111459986,Aymantaha@gmail.com,Vv456789,Vv456789,False,False,monile number only 10 digits
+7,Ayman,Ahmed,011145f9986,aymanahmed@gmail.com,Vv456789,Vv456789,False,False,monile number contain characters
+8,Eman,Ahmed,07114549986,eymanahmed@gmail.com,Vv456789,Vv456789,False,False,mobile number doesn't start with 01---------
+9,Nada,ElQersh,01058966487,nada@gmail.com,Nada1230,Nada1230,True,True,All conditions achieved
+10,Nada,Ahmed,01058966487,nada@gmail.com,Nada1230,Nada1230,False,True,email is already signed previously
+11,Mohamed,Dawod,01117322726,mohamedhassan@gmail.com,Aa123456,Aa123456,False,True,email is already signed previously
+12,Amgad,Hassan,01058966487,amgad@yahoo.com,A1234567,A1234567,False,False,passwors must contain at least one small letter
+13,Adham,Hassan,01058966487,adham@yahoo.com,a1234567,a1234567,False,False,Password must contain at least one capital letter
+14,Adam,AhMed,01058966487,adam@yahoo.com,12345678,12345678,False,False,Password must contain at least one capital and small letter
+15,Ehsan,Ahmed,01058966487,ehsan@yahoo.com,Ee123456,ee123456,False,True,confirmedPassword not equal Password
+16,Esraa,Ahmed,01058966487,esraa#yahoo.com,esra1230,esra1230,False,True,bad email format
+17,Amal,Ahmed,01058966487,amal@yahoo,amal1230,amal1230,False,True,Bad email format
+18,Tarek,Ahmed,01058966487,tarekyahoocom,tark1230,tark1230,False,True,Bad email format
+19,Tarek,Ahmed,01058966487,tarek@yahoo.com,Tark,Tark,False,True,too small password
