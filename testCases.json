@@ -1,0 +1,213 @@
+{
+	"SIGNUP_TEST": [ 
+		{
+			"Test_ID" : 1,
+			"FirstName": "",
+			"LastName": "",
+			"Mobile": "",
+			"Email": "",
+			"Password": "",
+			"ConfirmPassword": "",
+			"Expected": false,
+			"Reason": "empty elements"
+		},
+		{
+			"Test_ID" : 2,
+			"FirstName": "Mohamed",
+			"LastName": "Hassan",
+			"Mobile": "01117322726",
+			"Email": "mohamedhassan@gmail.com",
+			"Password": "Aa123456",
+			"ConfirmPassword": "Aa123456",
+			"Expected": true,
+			"Reason" : "All conditions achieved"
+		},
+		{
+			"Test_ID" : 3,
+			"FirstName": "ahmed",
+			"LastName": "Hassan",
+			"Mobile": "01259877456",
+			"Email": "ahmedhassan@gmail.com",
+			"Password": "SS123457",
+			"ConfirmPassword": "SS123457",
+			"Expected": false,
+			"Reason" : "first name start with small letter"
+		},
+		{
+			"Test_ID" : 4,
+			"FirstName": "Ahmed",
+			"LastName": "hassan",
+			"Mobile": "01259877456",
+			"Email": "ahmed_hassan@gmail.com",
+			"Password": "Ss123457",
+			"ConfirmPassword": "Ss123457",
+			"Expected": false,
+			"Reason" : "last name start with small letter"
+		},
+		{
+			"Test_ID" : 5,
+			"FirstName": "Ahmed",
+			"LastName": "Ahmed",
+			"Mobile": "01115699874",
+			"Email": "ahmedahmed@gmail.com",
+			"Password": "SS123456",
+			"ConfirmPassword": "SS123456",
+			"Expected": false,
+			"Reason" : "last name can't be equal first name"
+		},
+		{
+			"Test_ID" : 6,
+			"FirstName": "Ayman",
+			"LastName": "Taha",
+			"Mobile": "0111459986",
+			"Email": "Aymantaha@gmail.com",
+			"Password": "Vv456789",
+			"ConfirmPassword": "Vv456789",
+			"Expected": false,
+			"Reason" : "monile number only 10 digits"
+		},
+		{
+			"Test_ID" : 7,
+			"FirstName": "Ayman",
+			"LastName": "Ahmed",
+			"Mobile": "011145f9986",
+			"Email": "aymanahmed@gmail.com",
+			"Password": "Vv456789",
+			"ConfirmPassword": "Vv456789",
+			"Expected": false,
+			"Reason" : "monile number contain characters"
+		},
+		{
+			"Test_ID" : 8,
+			"FirstName": "Eman",
+			"LastName": "Ahmed",
+			"Mobile": "07114549986",
+			"Email": "eymanahmed@gmail.com",
+			"Password": "Vv456789",
+			"ConfirmPassword": "Vv456789",
+			"Expected": false,
+			"Reason" : "mobile number doesn't start with 01---------"
+		},
+		{
+			"Test_ID" : 9,
+			"FirstName": "Nada",
+			"LastName": "ElQersh",
+			"Mobile": "01058966487",
+			"Email": "nada@gmail.com",
+			"Password": "Nada1230",
+			"ConfirmPassword": "Nada1230",
+			"Expected": true,
+			"Reason" : "All conditions achieved"
+		},
+		{
+			"Test_ID" : 10,
+			"FirstName": "Nada",
+			"LastName": "Ahmed",
+			"Mobile": "01058966487",
+			"Email": "nada@gmail.com",
+			"Password": "Nada1230",
+			"ConfirmPassword": "Nada1230",
+			"Expected": false,
+			"Reason" : "email is already signed previously"
+		},
+		{
+			"Test_ID" : 11,
+			"FirstName": "Mohamed",
+			"LastName": "Dawod",
+			"Mobile": "01117322726",
+			"Email": "mohamedhassan@gmail.com",
+			"Password": "Aa123456",
+			"ConfirmPassword": "Aa123456",
+			"Expected": false,
+			"Reason" : "email is already signed previously"
+		},
+		{
+			"Test_ID" : 12,
+			"FirstName": "Amgad",
+			"LastName": "Hassan",
+			"Mobile": "01058966487",
+			"Email": "amgad@yahoo.com",
+			"Password": "A1234567",
+			"ConfirmPassword": "A1234567",
+			"Expected": false,
+			"Reason" : "passwors must contain at least one small letter"
+		},
+		{
+			"Test_ID" : 13,
+			"FirstName": "Adham",
+			"LastName": "Hassan",
+			"Mobile": "01058966487",
+			"Email": "adham@yahoo.com",
+			"Password": "a1234567",
+			"ConfirmPassword": "a1234567",
+			"Expected": false,
+			"Reason" : "Password must contain at least one capital letter"
+		},
+		{
+			"Test_ID" : 14,
+			"FirstName": "Adam",
+			"LastName": "AhMed",
+			"Mobile": "01058966487",
+			"Email": "adam@yahoo.com",
+			"Password": "12345678",
+			"ConfirmPassword": "12345678",
+			"Expected": false,
+			"Reason" : "Password must contain at least one capital and small letter"
+		},
+		{
+			"Test_ID" : 15,
+			"FirstName": "Ehsan",
+			"LastName": "Ahmed",
+			"Mobile": "01058966487",
+			"Email": "ehsan@yahoo.com",
+			"Password": "Ee123456",
+			"ConfirmPassword": "ee123456",
+			"Expected": false,
+			"Reason" : "confirmedPassword not equal Password"
+		},
+		{
+			"Test_ID" : 16,
+			"FirstName": "Esraa",
+			"LastName": "Ahmed",
+			"Mobile": "01058966487",
+			"Email": "esraa#yahoo.com",
+			"Password": "esra1230",
+			"ConfirmPassword": "esra1230",
+			"Expected": false,
+			"Reason" : "bad email format"
+		},
+		{
+			"Test_ID" : 17,
+			"FirstName": "Amal",
+			"LastName": "Ahmed",
+			"Mobile": "01058966487",
+			"Email": "amal@yahoo",
+			"Password": "amal1230",
+			"ConfirmPassword": "amal1230",
+			"Expected": false,
+			"Reason" : "Bad email format"
+		},
+		{
+			"Test_ID" : 18,
+			"FirstName": "Tarek",
+			"LastName": "Ahmed",
+			"Mobile": "01058966487",
+			"Email": "tarekyahoocom",
+			"Password": "tark1230",
+			"ConfirmPassword": "tark1230",
+			"Expected": false,
+			"Reason" : "Bad email format"
+		},
+		{
+			"Test_ID" : 19,
+			"FirstName": "Tarek",
+			"LastName": "Ahmed",
+			"Mobile": "01058966487",
+			"Email": "tarek@yahoo.com",
+			"Password": "Tark",
+			"ConfirmPassword": "Tark",
+			"Expected": false,
+			"Reason" : "too small password"
+		}
+	]
+}
